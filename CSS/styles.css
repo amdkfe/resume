@@ -1,0 +1,327 @@
+/*color pallete
+------------------------
+orange for links #f45a26
+blue for section 1 & section 6 and h2 #304D6D
+
+/* general body styles
+-----------------------*/
+.clearfix :after{
+content:"";
+  display:table;
+  clear: both
+}
+html {
+  box-sizing : border-box;
+}
+* , * ::before , * ::after {
+  box-sizing: inherit;
+}
+body {
+/*background-color: blue;*/
+font-family: 'Roboto Condensed', sans-serif, serif;
+font-family: 'Anton', sans-serif serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.content_wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Roboto Condensed';
+}
+
+/*typography
+--------------*/
+h1 {
+padding-top: 40px;
+padding-bottom: 12px;
+}
+h2 {
+padding-top: 40px;
+padding-bottom: 30px;
+color:#304D6D;
+}
+.section_six h2 {
+   color: #fff;
+}
+
+/*navigation styles
+------------------------------*/
+nav {
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  width:100%;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+
+}
+nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Anton;
+  color: #000;
+  font-size: 1.2em;
+  transition: color .3s;
+  }
+nav li{
+  display: inline-block;
+  margin: 20px 40px;
+}
+nav a:hover {
+  color: #f45a26;
+}
+p {
+  font-weight: 300;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+/* column styles
+------------------------*/
+.left_column {
+  /*border: 1px solid;*/
+  width: 30%;
+  text-align: justify;
+  display: inline-block;
+  float: left;
+  clear: left;
+}
+.right_column {
+  /*border: 1px solid;*/
+  width:60%;
+  float: left;
+  display: inline-block;
+  margin-left: 0px;
+}
+.description {
+  padding-top: 100px;
+}
+.single_column {
+  clear:both;
+  width: 100%;
+  text-align: center;/*gir daram chera nemishe?*/
+}
+table{
+  text-align: center;
+  width: 100%;
+}
+
+/* section styles
+-------------------------*/
+
+/*1
+about section
+-----------------*/
+.section_one {
+  background-color: #304D6D;
+  padding-bottom: 50px;
+  min-height: 460px;
+  /*position: relative;*/
+}
+.profile_image {
+  border-radius: 50%;
+  margin-top: 140px;
+  width: 80%;
+  transform: scaleX(-1);
+}
+.section_one h1 {
+  /*margin-top: 80px;*//*ba afzodan box-sizing in disable bayad beshe*/
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+  }
+h1+p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section_one p {
+  color: #fff;
+  text-align: justify;
+}
+
+/*2
+work section
+-----------------*/
+.section_two {
+  background-color: rgb(253,253,253);
+  overflow: auto;
+  /*position: relative;*/
+  min-height: 450px;
+}
+.work {
+  padding-bottom: 25px;
+}
+
+/*3
+education section
+-----------------*/
+.section_three {
+  background: linear-gradient(rgba(253, 253, 253, 1), rgba(255, 255, 255, 0.6) ),
+    url("../img/section-three-background.jpg") no-repeat fixed;
+  background-size:cover;
+  min-height: 560px;
+  margin: -20px auto;
+  padding: 60px 100px;
+}
+.education {
+  padding-bottom: 25px;
+}
+
+/*4
+skills section
+-----------------*/
+.section_four {
+  background-color: #fff;
+  min-height: 400px;
+}
+.section_four img{
+  width: 60%;
+}
+
+/*5
+portfolio section
+-----------------*/
+.section_five {
+  background:
+  linear-gradient(rgba(167, 204, 237, 0.8),rgba(167, 204, 237, 0.1)),
+  url(../img/11.jpg) no-repeat;
+  background-size: cover;
+
+  /*position: relative;*/
+}
+.section_five .left_column{
+  width: 100%;
+}
+.portfolio {
+  width: 50%;
+  position: relative;
+  padding-top: 10%;
+}
+.bg_box{
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+.bg_box:hover{
+  background-color: rgba(255, 255, 255, 1);
+}
+.section_five a{
+  color: #000;
+  text-decoration: none;
+}
+.section_five p{
+  padding: 15px 20px 20px 20px;
+}
+.section_five h4{
+  padding: 20px 20px 0 20px;
+}
+
+/*6
+contact section
+-----------------*/
+.section_six {
+  background-color: #304D6D;
+  min-height: 120px;
+}
+.section_six span {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-family: raleway;
+}
+.section_six i{
+  color: white;
+  size: 48px;
+}
+.fa {
+  font-size: 24px;
+}
+.single_column li {
+  margin: 40px;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+.section_six a {
+  text-decoration: none;
+}
+header{
+  background-repeat:no-repeat
+	background-position:center bottom;
+	background-color:red;
+}
+
+.single_column i:hover {
+  color: #f45a26;
+  transition: color .3s;
+}
+
+/* Media Queries
+-------------------------*/
+
+@media (max-width: 899px){
+
+  .content_wrap{
+    padding: 30px;
+  }
+  nav{
+    margin-bottom: 0px;
+  }
+  .profile_image {
+    width: 300px;
+    margin-top: 100px;
+  }
+  .left_column {
+    width: 100%;
+    text-align: center;
+  }
+  .section_one p {
+      color: #fff;
+      text-align: center;
+  }
+  .right_column {
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px;
+  }
+  .single_column {
+    width: 100%;
+    text-align: center;
+  }
+  nav li{
+    display: inline-block;
+    margin: -10px 6px;
+    font-size: 0.9em;
+  }
+  .section_six i{
+    color: white;
+    size: 48px;
+  }
+  .fa {
+    font-size: 24px;
+  }
+  .single_column li {
+    margin: 10px;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+  }
+  p {
+    font-weight: 300;
+      line-height: 1.4em;
+      text-align: center;
+  }
+  h2, h4 {
+    text-align: center;
+  }
+  nav a{
+    margin: 0px 10px;
+    width: 100%;
+    display: inline-block;
+  }
+}
