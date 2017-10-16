@@ -103,7 +103,7 @@ p {
 .single_column {
   clear:both;
   width: 100%;
-  text-align: center;/*gir daram chera nemishe?*/
+  text-align: center;
 }
 table{
   text-align: center;
@@ -127,20 +127,6 @@ about section
   margin-top: 140px;
   width: 80%;
   transform: scaleX(-1);
-}
-.section_one h1 {
-  /*margin-top: 80px;*//*ba afzodan box-sizing in disable bayad beshe*/
-  font-weight: bold;
-  font-size: 2em;
-  color: #fff;
-  }
-h1+p {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.section_one p {
-  color: #fff;
-  text-align: justify;
 }
 
 /*2
