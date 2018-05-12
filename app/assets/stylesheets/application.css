@@ -19,7 +19,7 @@
 /*color pallete
 ------------------------
 orange for links #f45a26
-blue for section 1 & section 6 and h2 #304D6D
+blue for section 1 & section 6 and h2 #304D6D, 
 
 /* general body styles
 -----------------------*/
@@ -52,16 +52,16 @@ font-family: 'Anton', sans-serif serif;
 /*typography
 --------------*/
 h1 {
-padding-top: 40px;
-padding-bottom: 12px;
+  padding-top: 40px;
+  padding-bottom: 12px;
 }
 h2 {
-padding-top: 40px;
-padding-bottom: 30px;
-color:#304D6D;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color:#f45a26;
 }
 .section_six h2 {
-   color: #fff;
+  color: #fff;
 }
 
 /*navigation styles
@@ -87,7 +87,7 @@ nav a {
   }
 nav li{
   display: inline-block;
-  margin: 20px 40px;
+  margin: 20px 20px;
 }
 nav a:hover {
   color: #f45a26;
@@ -125,7 +125,7 @@ p {
 }
 table{
   text-align: center;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 /* section styles
@@ -134,8 +134,10 @@ table{
 /*1
 about section
 -----------------*/
+
 .section_one {
-  background-color: #304D6D;
+  color: #ffffffc4;
+  background-color: #303030;
   padding-bottom: 50px;
   min-height: 460px;
   /*position: relative;*/
@@ -147,10 +149,16 @@ about section
   transform: scaleX(-1);
 }
 
+.section_one h1{
+  color: #fff;
+  font-size: 1.8em;
+}
+
 /*2
 work section
 -----------------*/
 .section_two {
+  margin-top: 45px;
   background-color: rgb(253,253,253);
   overflow: auto;
   /*position: relative;*/
@@ -168,7 +176,7 @@ education section
     url("https://cdn.rawgit.com/amdkfe/resume/220c0665/IMG/section-three-background.jpg") no-repeat fixed;
   background-size:cover;
   min-height: 560px;
-  margin: -20px auto;
+  margin: -80px auto;
   padding: 60px 100px;
 }
 .education {
@@ -179,8 +187,13 @@ education section
 skills section
 -----------------*/
 .section_four {
+  margin-top: 120px;
   background-color: #fff;
   min-height: 400px;
+  margin-bottom: 100px;
+}
+tr{
+  height: 250px;
 }
 .section_four img{
   width: 60%;
@@ -190,9 +203,9 @@ skills section
 portfolio section
 -----------------*/
 .section_five {
+  padding-top: 35px;
   background:
-  linear-gradient(rgba(167, 204, 237, 0.8),rgba(167, 204, 237, 0.1)),
-  url(../img/11.jpg) no-repeat;
+  linear-gradient(#d9d9d9,rgba(234, 238, 242, 0.1)), url(../img/11.jpg) no-repeat;
   background-size: cover;
 
   /*position: relative;*/
@@ -229,7 +242,7 @@ portfolio section
 contact section
 -----------------*/
 .section_six {
-  background-color: #304D6D;
+  background-color: #303030;
   min-height: 120px;
 }
 .section_six span {
@@ -265,19 +278,41 @@ header{
   transition: color .3s;
 }
 
+.download{
+  background-color: #fb753a;
+      padding: 21px 10px;
+    margin: -1px;
+
+}
+.download a{
+  color: #fff;
+
+}
+
+ .download:hover {
+  color: #fff;
+  background-color: #f45a26;
+  cursor: pointer;
+}
+ .download a:hover {
+  color: #fff;
+  background-color: #f45a26;
+}
+
+
 /* Media Queries
 -------------------------*/
 
 @media (max-width: 899px){
 
   .content_wrap{
-    padding: 30px;
+    padding-top: 20px;
   }
   nav{
     margin-bottom: 0px;
   }
   .profile_image {
-    width: 300px;
+    width: 280px;
     margin-top: 100px;
   }
   .left_column {
@@ -287,6 +322,14 @@ header{
   .section_one p {
       color: #fff;
       text-align: center;
+  }
+
+  .section_one h1{
+  font-size: 2em;
+  }
+
+  .section_one{
+     margin-top: 50px;
   }
   .right_column {
     width: 100%;
@@ -301,7 +344,30 @@ header{
     display: inline-block;
     margin: -10px 6px;
     font-size: 0.9em;
+    margin-bottom: 25px;
   }
+
+  .section_two {
+  margin-top: 15px;
+}
+
+.section_four {
+  margin-top: 60px;
+  background-color: #fff;
+  min-height: 400px;
+  margin-bottom: 5px;
+}
+tr{
+  height: 120px;
+}
+.section_four img{
+  width: 60%;
+}
+
+.section_five {
+  padding-top: 0px;
+}
+
   .section_six i{
     color: white;
     size: 48px;
@@ -328,4 +394,25 @@ header{
     width: 100%;
     display: inline-block;
   }
+
+  .bg_box{
+    margin: 15px;
+  }
+
+  .download{
+  background-color: #fff;
+      padding: 0;
+    margin: 0;
+
+}
+.download a{
+  color: #f45a26;
+
+}
+
+.about{
+  display: none;
+}
+
+
 }
