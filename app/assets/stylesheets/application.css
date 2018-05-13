@@ -233,6 +233,9 @@ tr{
   width: 60%;
 
 }
+td{
+  width: 25%;
+}
 
 /*5
 portfolio section
@@ -296,7 +299,7 @@ portfolio section
 
 .portfolio_img img{
   width: 100%;
-  height: 200px;
+  height: auto;
   background-size: contain;
   display: inline-block;
 }
@@ -522,7 +525,7 @@ tr{
 
   .portfolio_img img{
     width: 90%;
-    height: 300px;
+    height: auto;
     background-size: contain;
     display: block;
     margin: 25px auto -4px;
@@ -553,5 +556,25 @@ tr{
     color: white;
     display: block;
 }
+
+
+
+
+
+
+.section_three {
+  margin-top: 15px;
+  padding: 5px 25px;
+
+  background: linear-gradient(rgba(253, 253, 253, 1), rgba(255, 255, 255, 0.6) ), 
+  url(https://cdn.rawgit.com/amdkfe/resume/4238127975af4e7146ccf0b659f650d3bb72ea5c/app/assets/images/wgc2.jpg) no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 560px;
+  margin: -50px auto;
+    /* padding: 60px 100px; */
+}
+
+
 
 
