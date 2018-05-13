@@ -58,10 +58,27 @@ h1 {
 h2 {
   padding-top: 40px;
   padding-bottom: 30px;
-  color:#f45a26;
+  color:#9d9d9d;
+
 }
 .section_six h2 {
   color: #fff;
+}
+
+h4 {
+margin: -4px 0 8px 0;
+  }
+
+h5 {
+  /*margin-left: 20px;*/
+  color: #9d9d9d;
+  margin-bottom: -5px;
+  text-align: center;
+  font-weight: 500;
+    margin-top: 3px;
+}
+.single_column li a span {
+  font-family: inherit;
 }
 
 /*navigation styles
@@ -75,6 +92,7 @@ nav {
   z-index: 1;
   top: 0;
   text-align: center;
+      left: 0;
 
 }
 nav a {
@@ -87,8 +105,16 @@ nav a {
   }
 nav li{
   display: inline-block;
-  margin: 20px 20px;
+  /*margin: 20px 20px;*/
+      display: inline-block;
+    /* margin: 20px 5px; */
+    /* padding: 0px 24px; */
+    width: 13%;
 }
+/*
+nav li:nth-last-child(2){
+  width: 20%;
+}*/
 nav a:hover {
   color: #f45a26;
 }
@@ -110,7 +136,7 @@ p {
 }
 .right_column {
   /*border: 1px solid;*/
-  width:60%;
+  width: 68%;
   float: left;
   display: inline-block;
   margin-left: 0px;
@@ -141,6 +167,7 @@ about section
   padding-bottom: 50px;
   min-height: 460px;
   /*position: relative;*/
+      padding: 30px;
 }
 .profile_image {
   border-radius: 50%;
@@ -158,14 +185,19 @@ about section
 work section
 -----------------*/
 .section_two {
-  margin-top: 45px;
+  margin-top: 35px;
   background-color: rgb(253,253,253);
   overflow: auto;
   /*position: relative;*/
   min-height: 450px;
+      padding: 30px;
 }
 .work {
   padding-bottom: 25px;
+}
+
+.last .left_column {
+  padding-bottom: 100px;
 }
 
 /*3
@@ -175,12 +207,13 @@ education section
   background: linear-gradient(rgba(253, 253, 253, 1), rgba(255, 255, 255, 0.6) ),
     url("https://cdn.rawgit.com/amdkfe/resume/220c0665/IMG/section-three-background.jpg") no-repeat fixed;
   background-size:cover;
-  min-height: 560px;
+  min-height: 520px;
   margin: -80px auto;
-  padding: 60px 100px;
+  padding: 60px 30px;
 }
 .education {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+
 }
 
 /*4
@@ -191,22 +224,35 @@ skills section
   background-color: #fff;
   min-height: 400px;
   margin-bottom: 100px;
+      padding: 30px;
 }
 tr{
   height: 250px;
 }
 .section_four img{
   width: 60%;
+
 }
 
 /*5
 portfolio section
 -----------------*/
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+  padding: 10px;
+}
+
+
+
+
 .section_five {
   padding-top: 35px;
   background:
   linear-gradient(#d9d9d9,rgba(234, 238, 242, 0.1)), url(../img/11.jpg) no-repeat;
   background-size: cover;
+    padding: 30px;
 
   /*position: relative;*/
 }
@@ -223,6 +269,9 @@ portfolio section
   cursor: pointer;
   margin-bottom: 20px;
   transition: background-color 0.3s;
+  width: 100%;
+  float: left;
+  min-height: 330px;
 }
 .bg_box:hover{
   background-color: rgba(255, 255, 255, 1);
@@ -231,11 +280,25 @@ portfolio section
   color: #000;
   text-decoration: none;
 }
+
+.section_five h4{
+  text-align: center;
+}
 .section_five p{
   padding: 15px 20px 20px 20px;
+  text-align: center;
 }
 .section_five h4{
   padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+
+.portfolio_img img{
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  display: inline-block;
 }
 
 /*6
@@ -298,7 +361,15 @@ header{
  .download a:hover {
   color: #fff;
   background-color: #f45a26;
+  transition: background-color .3s;
+
 }
+
+.button{
+  display: none;
+}
+
+
 
 
 /* Media Queries
@@ -311,6 +382,7 @@ header{
   }
   nav{
     margin-bottom: 0px;
+    display: none;
   }
   .profile_image {
     width: 280px;
@@ -323,6 +395,7 @@ header{
   .section_one p {
       color: #fff;
       text-align: center;
+      padding: 0px 25px;
   }
 
   .section_one h1{
@@ -330,12 +403,15 @@ header{
   }
 
   .section_one{
-     margin-top: 50px;
+     /*margin-top: 50px;*/
+    margin-top: -45px;
+    padding-bottom: 40px;
   }
   .right_column {
     width: 100%;
     text-align: center;
     padding: 0px 0px;
+    padding: 0px 0 15px 0px;
   }
   .single_column {
     width: 100%;
@@ -350,6 +426,27 @@ header{
 
   .section_two {
   margin-top: 15px;
+  padding: 5px 25px;
+  margin-bottom: 70px;
+}
+
+.section_three {
+  margin-top: 15px;
+  padding: 5px 25px;
+
+  background: linear-gradient(rgba(253, 253, 253, 1), rgba(255, 255, 255, 0.6) ), url(https://cdn.rawgit.com/amdkfe/resume/220c0665/IMG/section-three-background.jpg) no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 560px;
+  margin: -50px auto;
+    /* padding: 60px 100px; */
+}
+.section_three .right_column{
+    padding: 0px 0 40px 0px;
+
+}
+.last .left_column {
+   padding-bottom: 0px; 
 }
 
 .section_four {
@@ -361,18 +458,34 @@ header{
 tr{
   height: 120px;
 }
+.education {
+  padding-bottom: 0px;
+}
+
+.section_four{
+  padding-bottom: 50px;
+}
+
 .section_four img{
   width: 60%;
 }
 
 .section_five {
   padding-top: 0px;
+  padding: 15px;
+  background: linear-gradient(#ececec,rgba(160, 160, 160, 0.1)), url(../img/11.jpg) no-repeat;
 }
 
   .section_six i{
     color: white;
     size: 48px;
   }
+
+  .grid{
+  display: inline-block;
+  /*grid-template-columns: auto auto auto;*/
+  /*grid-column-gap: 10px;*/
+}
   .fa {
     font-size: 24px;
   }
@@ -382,6 +495,10 @@ tr{
     list-style-type: none;
     text-align: center;
   }
+
+  br {
+    display: none;
+  }
   p {
     font-weight: 300;
       line-height: 1.4em;
@@ -389,6 +506,7 @@ tr{
   }
   h2, h4 {
     text-align: center;
+        margin: -4px 0 8px 0;
   }
   nav a{
     margin: 0px 10px;
@@ -397,17 +515,28 @@ tr{
   }
 
   .bg_box{
-    margin: 15px;
+    margin: 10px auto;
+    width: 100%;
+    display: inline-block;
   }
 
-  .download{
+  .portfolio_img img{
+    width: 90%;
+    height: 300px;
+    background-size: contain;
+    display: block;
+    margin: 25px auto -4px;
+}
+
+  .button{
   background-color: #fff;
-      padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
 }
-.download a{
-  color: #f45a26;
+.button a{
+  color: white;
+  text-decoration: none;
 
 }
 
@@ -415,5 +544,14 @@ tr{
   display: none;
 }
 
-
+.button{
+    background-color: #f45a26;
+    padding: 12px;
+    margin: 30px auto;
+    width: 26%;
+    text-align: center;
+    color: white;
+    display: block;
 }
+
+
