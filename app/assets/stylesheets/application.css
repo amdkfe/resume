@@ -171,7 +171,7 @@ about section
 }
 .profile_image {
   border-radius: 50%;
-  margin-top: 140px;
+  margin-top: 110px;
   width: 80%;
   transform: scaleX(-1);
 }
@@ -383,7 +383,7 @@ header{
 @media (max-width: 899px){
 
   .content_wrap{
-    padding-top: 20px;
+    padding-top: 0px;
   }
   nav{
     margin-bottom: 0px;
@@ -484,6 +484,7 @@ tr{
   .section_six i{
     color: white;
     size: 48px;
+    padding: 17px;
   }
 
   .grid{
@@ -538,6 +539,7 @@ tr{
   background-color: #fff;
   padding: 0;
   margin: 0;
+  min-width: 120px;
 
 }
 .button a{
@@ -571,6 +573,13 @@ tr{
   min-height: 560px;
   margin: -50px auto;
     /* padding: 60px 100px; */
+}
+
+
+.single_column li a span {
+    font-family: inherit;
+    display: none!important;
+    color: red;
 }
 
 
